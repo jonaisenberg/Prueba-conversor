@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Api</title>
+</head>
+<body>
+    <h1>Conversor De Moneda Nacional</h1>
+    <span class="linea"></span>
+    <section class="menu">
+        <h2>Pesos CLP</h2>
+        <input type="text" id="digitar" placeholder="Ingrese el monto en CLP">
+        <h3>Moneda a convertir:</h3>
+        <select id="seleccionar-tipo">
+        </select>
+        <button onclick="consultar()" id="consultar">Buscar</button>
+        <p>Total: <span id="resultado"></span></p>
+    </section>
+    <section id="crear-div">
+    </section>
+    <section>
+        <h1>Últimos Sismos en Chile</h1>
+        <div class="grafica">
+            <canvas id="myChart" width="800px" height="400px"></canvas>
+        </div>
+    </section>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/grafico.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>
